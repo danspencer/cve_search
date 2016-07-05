@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dan Spencer"]
   spec.email         = ["da_spencer@hotmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby wrapper created for the CVE Search API.}
+  spec.homepage      = "https://github.com/danspencer/cve_search"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
