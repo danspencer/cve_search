@@ -17,5 +17,11 @@ module CveSearch
       attributes = JSON.parse(response.body)
       new(attributes)
     end
+
+    def self.all
+      response = Faraday.get("#{API_URL}/")
+      vendors = JSON.parse(response.body)
+      vendors['vendor'].map { |name| new(Hash["vendor" => name]) }
+    end
   end
 end
