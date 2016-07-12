@@ -20,9 +20,9 @@ class CveSearchVendorTest < Minitest::Test
     VCR.use_cassette('all_vendors') do
       vendors = CveSearch::Vendor.all
       assert vendors.kind_of? Array
-      assert_equal vendors.length, 5000
+      assert_equal 5000, vendors.length
       assert vendors.first.kind_of? CveSearch::Vendor
-      assert_equal vendors.first.name, "%240.99_kindle_books_project"
+      assert_equal "%240.99_kindle_books_project", vendors.first.name
     end
   end
 
