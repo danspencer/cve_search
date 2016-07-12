@@ -1,9 +1,9 @@
 require 'faraday'
 require 'json'
 
-API_URL = "https://cve.circl.lu/api/browse"
-
 module CveSearch
+  API_URL = "https://cve.circl.lu/api/browse"
+
   class Vendor
     attr_reader :name, :products
 
@@ -22,6 +22,12 @@ module CveSearch
       response = Faraday.get("#{API_URL}/")
       vendors = JSON.parse(response.body)
       vendors['vendor'].map { |name| new(Hash["vendor" => name]) }
+    end
+
+    def self.products_by(vendor)
+      response = Faraday.get("#{API_URL}/#{vendor}")
+      products = JSON.parse(response.body)
+      products['product'].map { |name| new(Hash["vendor" => name]) }
     end
   end
 end

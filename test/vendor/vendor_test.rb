@@ -25,4 +25,13 @@ class CveSearchVendorTest < Minitest::Test
       assert_equal vendors.first.name, "%240.99_kindle_books_project"
     end
   end
+
+  def test_it_gives_back_all_products_for_vendor
+    VCR.use_cassette('all_products_for_vendors') do
+      products = CveSearch::Vendor.products_by('microsoft')
+      assert products.kind_of? Array
+      assert_equal 433, products.length
+      assert_equal ".net_framework", products.first.name
+    end
+  end
 end
