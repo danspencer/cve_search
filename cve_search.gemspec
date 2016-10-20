@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_development_dependency "pry-byebug"
+  spec.add_development_dependency "railties"
 
   spec.add_dependency "faraday"
   spec.add_dependency "json"
