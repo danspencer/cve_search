@@ -1,3 +1,4 @@
+require_relative "cve_search/cve"
 require_relative "cve_search/version"
 require_relative "cve_search/vendor"
 require_relative "cve_search/database"
