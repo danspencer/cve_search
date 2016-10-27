@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://cve.circl.lu/api/dbInfo
+    uri: http://cve.circl.lu/api/dbInfo
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 18 Oct 2016 03:43:05 GMT
+      - Thu, 27 Oct 2016 01:53:55 GMT
       Server:
       - TornadoServer/4.0.2
-      Strict-Transport-Security:
-      - max-age=15768000
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
@@ -31,16 +29,16 @@ http_interactions:
       Cache-Control:
       - max-age=1200
       Expires:
-      - Tue, 18 Oct 2016 04:03:05 GMT
+      - Thu, 27 Oct 2016 02:13:55 GMT
     body:
       encoding: UTF-8
-      string: '{"blA": 0, "capecA": 463, "vendorA": 1425, "dbSize": 542127560, "cveA":
-        79661, "cpeA": 115445, "wlA": 0, "d2secA": 265, "vfeedU": "Mon, 22 Aug 2016
+      string: '{"blA": 0, "capecA": 463, "vendorA": 1425, "dbSize": 543184384, "cveA":
+        79851, "cpeA": 115587, "wlA": 0, "d2secA": 265, "vfeedU": "Mon, 22 Aug 2016
         12:43:52 GMT", "d2secU": "Wed, 14 Sep 2016 20:10:00 GMT", "capecU": "Thu,
-        04 Dec 2014 23:14:41 GMT", "vendorU": "Mon, 17 Oct 2016 04:45:07 GMT", "cpeOtherA":
-        247203, "cpeU": "Fri, 07 Oct 2016 04:59:55 GMT", "cveU": "Tue, 18 Oct 2016
-        00:03:47 GMT", "vfeedA": 80006, "dbOnDisk": 712372224, "dbName": "cvedb",
+        04 Dec 2014 23:14:41 GMT", "vendorU": "Wed, 26 Oct 2016 04:45:04 GMT", "cpeOtherA":
+        247203, "cpeU": "Wed, 26 Oct 2016 15:20:27 GMT", "cveU": "Thu, 27 Oct 2016
+        00:02:40 GMT", "vfeedA": 80006, "dbOnDisk": 712372224, "dbName": "cvedb",
         "cpeOtherU": "Wed, 18 Mar 2015 12:03:07 GMT"}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 03:43:05 GMT
+  recorded_at: Thu, 27 Oct 2016 01:53:55 GMT
 recorded_with: VCR 3.0.3
